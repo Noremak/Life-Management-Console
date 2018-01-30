@@ -1,8 +1,8 @@
 body {
-    background-color: #1b1b1b;
-    font-family: 'Monaco';
+    background-color: #272727;
+    font-family: 'Menlo', 'Monaco';
     color: #fff;
-    font-size: 12px;
+    font-size: 13px;
     padding: 0;
     margin: 0;
     width: 100%;
@@ -45,19 +45,19 @@ input:focus {
 }
 
 .border-bottom {
-    border-bottom: 2px solid #fff;
+    border-bottom: 1px solid #fff;
 }
 
 .border-top {
-    border-top: 2px solid #fff;
+    border-top: 1px solid #fff;
 }
 
 .border-left {
-    border-left: 2px solid #fff;
+    border-left: 1px solid #fff;
 }
 
 .border-right {
-    border-right: 2px solid #fff;
+    border-right: 1px solid #fff;
 }
 
 .row-p {
@@ -65,22 +65,89 @@ input:focus {
 
 }
 
-.debt {
+.red {
     color: #ff5959
 }
 
-.spending-good {
+.green {
     color: #31de41
 }
 
-.budgeted {
+.white {
     color: #ffffff;
 }
 
-.income {
+.blue {
     color: #56d8f9;
 }
 
 .tasks-col {
     height: 100% !important;
+}
+
+/* flexbox styling */
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .header {
+    height: 30px !important;
+  }
+
+  .content {
+    display: flex;
+    flex: 1;
+    margin-top: 3px;
+  }
+
+  .columns {
+    display: flex;
+    flex:1;
+  }
+
+  .main-body {
+    flex: 1;
+    order: 2;
+  }
+
+  .sidebar-first {
+    width: 30%;
+    order: 1;
+    border-right: 1px solid #b2b2b2;
+  }
+
+  .sidebar-second { 
+    width: 20%;
+    order: 3;
+  }
+
+  /* typography */
+  .text-center {
+      text-align: center;
+  }
+
+  :-webkit-any(article,aside,nav,section) h1 {
+    font-size: 1.15em;
+    -webkit-margin-before: 0.5em !important;
+    -webkit-margin-after: 0.5em !important;
+}
+
+/* badges */
+.badge-ui {
+    background-color: #ff5959;
+    color: #000;
+    font-size: 9px;
+    border-radius: 7px;
+    padding: 2px;
+    margin-right: 4px;
+}
+
+.badge-nui {
+    background-color: #31de41;
+    color: #000;
+    font-size: 9px;
+    border-radius: 7px;
+    padding: 2px;
+    margin-right: 4px;
 }
