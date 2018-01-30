@@ -92,13 +92,13 @@ input:focus {
     flex-direction: column;
   }
   .header {
-    height: 30px !important;
+    min-height: 30px !important;
   }
 
   .content {
     display: flex;
     flex: 1;
-    margin-top: 3px;
+    margin-top: auto;
   }
 
   .columns {
@@ -113,8 +113,10 @@ input:focus {
 
   .sidebar-first {
     width: 30%;
+    min-width: 250px;
     order: 1;
     border-right: 1px solid #b2b2b2;
+    padding-right: 10px;
   }
 
   .sidebar-second { 

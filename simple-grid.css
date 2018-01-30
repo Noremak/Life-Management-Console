@@ -3,6 +3,7 @@
 *** (C) ZACH COLE 2016
 **/
 
+
 /* POSITIONING */
 
 .left {
@@ -26,7 +27,7 @@
 /* ==== GRID SYSTEM ==== */
 
 .container {
-  width: 100%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -115,6 +116,16 @@
   display: none;
 }
 
+@media only screen and (min-width: 33.75em) {  /* 540px */
+  .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 45em) {  /* 720px */
+  .col-1 {
+    width: 4.33%;
+  }
 
   .col-2 {
     width: 12.66%;
@@ -162,5 +173,12 @@
 
   .hidden-sm {
     display: block;
+  }
+}
+
+@media only screen and (min-width: 60em) { /* 960px */
+  .container {
+    width: 75%;
+    max-width: 60rem;
   }
 }
