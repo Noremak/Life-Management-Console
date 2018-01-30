@@ -32,13 +32,52 @@ input:focus {
     outline-width: 0;
 }
 
-#main {
+/* #main {
     min-width: 600px;
     padding: 0;
     margin: 0 0 50px 0;
-}
+} */
 
-.top {
+
+  .wrapper{
+    min-height: 100vh;
+    background: #ccc;
+    display: flex;
+    flex-direction: column;
+  }
+  .header {
+    height: 30px;
+    background: #666;
+    color: #fff;
+  }
+  .content {
+    display: flex;
+    flex: 1;
+    background: #999;
+    color: #000; 
+  }
+  .columns{
+    display: flex;
+    flex:1;
+  }
+  .main{
+    flex: 1;
+    order: 2;
+    background: #eee;
+  }
+  .sidebar-first{
+    width: 30%;
+    background: #ccc;
+    order: 1;
+  }
+  .sidebar-second{ 
+    width: 20%;
+    order: 3;
+    background: #ddd;
+  }
+
+
+/* .top {
     background: blue;
     height: 40px;
     padding: 5px;
@@ -83,4 +122,4 @@ input:focus {
 
 .tasks-col {
     height: 100% !important;
-}
+} */
