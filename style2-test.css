@@ -79,13 +79,11 @@ html, body, #container {
 
 /* FLEXBOX STYLING TASKS */
 #quad-1 {
-    flex: 1;
     overflow-y: auto;
     height: 50%;
     border-bottom: 1px solid white;
     border-right: 1px solid white;
     padding: 3px;
-    min-width: 0;
 }
 
 #quad-2 {

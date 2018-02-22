@@ -8,23 +8,56 @@
 
     <link href="style.css" rel="stylesheet">
 
-    <!-- Bootstrap -->
-    <link href="simple-grid.css" rel="stylesheet">
 </head>
 
 <body>
-    <div id="main">
-        
-    </div>
+        <div id="container">
+                <div id="header"><ul class="header-list-inline no-margin text-center">
+                        <li><span class="red">DEBT: -$68,414</span></li>
+                        <li><span class="blue">ASSETS: $3,000</span></li>
+                        <li><span class="red">NW: -$65,000</span></li>
+                        <li>|</li>
+                        <li><span class="green">JAN. SPENDING: -$1,917</span></li>
+                        <li><span class="white">JAN. BUDGET: $2,000</span></li>
+                        <li><span class="blue">JAN. INCOME: $2,549</span></li>
+                    </ul></div>
+                <div id="main">
+                  <div id="sidebar">
+                      <h3 class="text-center">TASKS</h3>
+                    <ol>
+                        <li>Clean Room</li>
+                        <li>Write LEtters</li>
+                        <li><span class="badge-ui">ui</span> Budget</li>
+                        <li><span class="badge-nui">nui</span>Call Grandparents</li>
+                        <li>Work on Logbook</li>
+                    </ol>
+                  </div>
+                  <div id="content">
+                    <div id="list">
+                        <h3 class="text-center">GOAL OVERVIEW</h3>
+                        <ol>
+                            <li>Pullups: <span class="red">9</span><span class="green">/15 | 60%</span></li>
+                            <li>Debt Repayment: <span class="red">$17,000</span><span class="green">/$80,000 | 21%</span></li>
+                            <li>TeamTreeHouse Javascript: <span class="red">5</span><span class="green">/24 courses | 23%</span></li>
+                        </ol>
+                     </div>
+                     <div id="details">
+                        <h3 class="text-center">CALENDAR OVERVIEW</h3>
+                        <ol>
+                            <li><span class="blue">February 8:</span> Friend's Birthday | 10 days</li>
+                            <li><span class="blue">February 24:</span> Flight to Redmond | 24 days</li>
+                            <li><span class="blue">March 5:</span> Start at 5 Star | 35 days</li>
+                        </ol>   
+                     </div>
+                  </div>
+                </div>
+              </div>
+
     <div class="console-entry">
         > <input type="text" id="console">
     </div>
-<!-- Need to make a textbox function in javascript that does 2 things: 
-    (1)On page load, automatically focuses on text box. 
-    (2)Either disables mouse focus, OR just returns focus to text box after set amount of time. -->
-
-
 
   <script src="script.js"></script>
 </body>
 </html>
+

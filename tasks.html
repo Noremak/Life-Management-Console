@@ -2,96 +2,101 @@
 
 <head>
     <meta charset="utf-8">
-    <title>>_life-console</title>
+    <title>> Tasks</title>
     <meta name="description" content="Life Management Console">
     <meta name="author" content="Kameron">
 
-    <!-- <link href="simple-grid.css" rel="stylesheet"> -->
     <link href="style.css" rel="stylesheet">
 
-    
 </head>
 
 <body>
-    
-    <h3 class="text-center border-bottom page-title">TASKS</h3>        
-    <div class="tasks-wrapper">
-        <section class="content">
-            <div class="columns">
-                    <aside class="sidebar-50percent">
-                            <div>
-                                <h1 class="text-center red">URGENT, IMPORTANT | UI</h1>
-                                <ol id="ui">
-        
-                                </ol>
-                            </div>
-                            <div class="border-top">
-                                <h1 class="text-center yellow">URGENT, NOT IMPORTANT | UNI</h1>
-                                <ol id="uni">
-                                        <li><span class="blue">February 8:</span> Friend's Birthday | 10 days</li>
-                                        <li><span class="blue">February 24:</span> Flight to Redmond | 24 days</li>
-                                        <li><span class="blue">March 5:</span> Start at 5 Star | 35 days</li>
-                                </ol>
-                            </div>
-                        </aside>
-                <main class="main-body">
-                        <div>
-                            <h1 class="text-center blue">NOT URGENT, IMPORTANT | NUI</h1>
-                            <div class="row">
-                                <div class="col-12">
-                                    <ol id="nui">
-                                        <li>Pullups: <span class="red">9</span><span class="green">/15 | 60%</span></li>
-                                        <li>Debt Repayment: <span class="red">$17,000</span><span class="green">/$80,000 | 21%</span></li>
-                                        <li>TeamTreeHouse Javascript: <span class="red">5</span><span class="green">/24 courses | 23%</span></li>
-                                    </ol>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="border-top">
-                            <h1 class="text-center rust">NOT URGENT, NOT IMPORTANT | NUNI</h1>
-                            <ol id="nuni">
-                                    <li><span class="blue">February 8:</span> Friend's Birthday | 10 days</li>
-                                    <li><span class="blue">February 24:</span> Flight to Redmond | 24 days</li>
-                                    <li><span class="blue">March 5:</span> Start at 5 Star | 35 days</li>
-                            </ol>
-                        </div>
-                </main>
-                
-
-            </div>
-        </section>
-    </div>
-
-
-
-
-
-    <div class="console-entry">
-            > <input type="text" id="console">
-    </div> 
-    <!-- original design -->
-    <!-- <div id="main">
-            <div class="row border-bottom">
-                <div class="col-3"><span class="debt">DEBT: -$68,414</span></div>
-                <div class="col-3"><span class="spending-good">JANUARY SPENDING: -$1,917</span></div>
-                <div class="col-3"><span class="budgeted">JANUARY BUDGET: $2,000</span></div>
-                <div class="col-3"><span class="income">JANUARY INCOME: $2,549</span></div>
-            </div>
-            <div class="row">
-                <div class="col-4 tasks-col" style="background-color: blue;">
-                    test
+    <div id="container">
+        <div id="header">
+            <ul class="header-list-inline no-margin">
+                <li>
+                    TASKS: 
+                </li>
+                <li>
+                    24
+                </li>
+            </ul>
+        </div>
+        <div id="main">
+            <div id="content">
+                <div id="quad-1">
+                    <h3 class="text-center">URGENT, IMPORTANT - UI</h3>
+                    <ol>
+                        <li>Pullups:
+                            <span class="red">9</span>
+                            <span class="green">/15 | 60%</span>
+                        </li>
+                        <li>Debt Repayment:
+                            <span class="red">$17,000</span>
+                            <span class="green">/$80,000 | 21%</span>
+                        </li>
+                        <li>TeamTreeHouse Javascript:
+                            <span class="red">5</span>
+                            <span class="green">/24 courses | 23%</span>
+                        </li>
+                    </ol>
+                </div>
+                <div id="quad-3">
+                    <h3 class="text-center">URGENT, NOT IMPORTANT - UNI</h3>
+                    <ol>
+                        <li>
+                            <span class="blue">February 8:</span> Friend's Birthday | 10 days</li>
+                        <li>
+                            <span class="blue">February 24:</span> Flight to Redmond | 24 days</li>
+                        <li>
+                            <span class="blue">March 5:</span> Start at 5 Star | 35 days</li>
+                    </ol>
                 </div>
             </div>
+
+            <div id="content">
+                <div id="quad-2">
+                    <h3 class="text-center">NOT URGENT, IMPORTANT - NUI</h3>
+                    <ol>
+                        <li>Pullups:
+                            <span class="red">9</span>
+                            <span class="green">/15 | 60%</span>
+                        </li>
+                        <li>Debt Repayment:
+                            <span class="red">$17,000</span>
+                            <span class="green">/$80,000 | 21%</span>
+                        </li>
+                        <li>TeamTreeHouse Javascript:
+                            <span class="red">5</span>
+                            <span class="green">/24 courses | 23%</span>
+                        </li>
+                    </ol>
+                </div>
+                <div id="quad-4">
+                    <h3 class="text-center">NOT URGENT, NOT IMPORTANT - NUNI</h3>
+                    <ol>
+                        <li>
+                            <span class="blue">February 8:</span> Friend's Birthday | 10 days</li>
+                        <li>
+                            <span class="blue">February 24:</span> Flight to Redmond | 24 days</li>
+                        <li>
+                            <span class="blue">March 5:</span> Start at 5 Star | 35 days</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
     </div>
+
     <div class="console-entry">
-        > <input type="text" id="console">
-    </div> -->
-<!-- Need to make a textbox function in javascript that does 2 things: 
-    (1)On page load, automatically focuses on text box. 
-    (2)Either disables mouse focus, OR just returns focus to text box after set amount of time. -->
+        >
+        <input type="text" id="console">
+    </div>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/frappe-charts@0.0.8/dist/frappe-charts.min.iife.js"></script>
+    
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script src="tasks.js"></script>
 </body>
+
 </html>
