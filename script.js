@@ -37,7 +37,6 @@ function comInt() {
     if (event.keyCode == 13) {
         comInt();
         document.getElementById('console').value = "";
-
     }
 });
 
